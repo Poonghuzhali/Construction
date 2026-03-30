@@ -1,0 +1,594 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.overall {
+  width: 90%;
+  margin: auto;
+}
+
+nav img {
+  width: 120px; 
+  height: auto;
+}
+ a{
+  text-decoration: none;
+  color: black;
+ }
+ /*Navigation bar*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: sticky;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  margin-right: auto;
+  margin-left: 40px;
+
+}
+nav ul li  {
+  list-style-type: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #ffb400; 
+}
+nav button {
+  background-color: #ffb400;
+  border: none;
+  padding: 10px 25px 10px 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+nav button span {
+  background-color: white;
+  padding: 5px 10px ;
+  border: white;
+  border-radius:18px;
+}
+
+nav button span:hover {
+  background-color:coral;
+  color: black;
+}
+
+/*banner section 1*/
+.bannersection1{
+    height: 60vh;
+    position: relative;
+    background: linear-gradient(90deg, rgba(40, 52, 81, .91) 0%,
+      rgba(40, 52, 81, .55) 45%,  rgba(40, 52, 81, .15) 100% );
+}
+.bannerimage>img{
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    z-index: -1;
+}
+.bannersection1 h1,p {
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.bannersection1 h1{
+    color: #ffb400;
+    font-family: 'oswald',sans-serif;
+    padding: 30px;
+}
+.bannersection1 p{
+    font-family: 'oswald', sans-serif;
+    color: white;
+    padding: 40px;
+}
+
+/*floating box*/
+  :root {
+    --yellow: #f6b401;
+    --dark: #1a1d24;
+}
+
+.stats-overflow {
+    position: relative;
+    z-index: 10; /* Ensures it sits ABOVE the banner */
+    margin-top: -80px; /* This creates the overlap */
+    padding: 0 20px;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.stat-box {
+    background: #ffffff;
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); 
+    border-bottom: 4px solid transparent;
+    transition: 0.3s ease;
+    border-radius: 15px;
+}
+
+.stat-box:hover {
+    border-bottom: 4px solid var(--yellow);
+    transform: translateY(-5px); 
+}
+
+.stat-box i {
+    font-size: 40px;
+    color: var(--yellow);
+    margin-bottom: 15px;
+}
+
+.stat-box h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    margin: 10px 0;
+    color: var(--dark);
+}
+
+.stat-box p {
+    font-family: 'Inter', sans-serif;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/*Section 3*/
+.section3{
+  display: flex;
+  margin: 20px 0px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  font-family: 'oswald', sans-serif;
+}
+.section3images>img{
+  margin: 30px 0px;
+  width: 700px;
+  height: auto;
+}
+.section3words{
+  margin: 30px 0px;
+  padding: 20px 20px 20px 20px;
+
+}
+.section3words p{
+  font-family: 'inter', sans-serif;
+}
+/*Section 4 & 5*/
+:root {
+    --navy: #0d1b2a;
+    --yellow: #f6b401;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.mission-vision-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Mission & Vision Row */
+.mv-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.mv-card {
+    flex: 1;
+    padding: 50px 40px;
+    border-radius: 20px; /* Exact rounded look from Figma */
+    text-align: center;
+    color: var(--text-light);
+}
+
+.mission { background-color: var(--navy); }
+.vision { background-color: var(--yellow); }
+
+.mv-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.mv-icon img{
+  width: 70px;
+  border-radius: 50%;
+}
+
+.mv-card h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.mv-card p {
+    line-height: 1.7;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* Core Values Section */
+.values-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.values-header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.value-card {
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-card img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+/*Team Section*/
+:root {
+    --dark-navy: #1a1d24;
+    --text-grey: #666666;
+    --heading-font: 'Oswald', sans-serif;
+    --body-font: 'Inter', sans-serif;
+}
+
+.team-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+   
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Header Styles */
+.team-header {
+    margin-bottom: 60px;
+}
+
+.team-header h2 {
+    font-family: var(--heading-font);
+    font-size: 42px;
+    color: var(--dark-navy);
+    text-transform: capitalize; /* Matches Figma's "Meet Our Team" */
+    margin-bottom: 10px;
+}
+
+.team-header p {
+    font-family: var(--body-font);
+    color: var(--text-grey);
+    font-size: 16px;
+}
+
+/* Grid Styles */
+.team-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Important for responsiveness */
+}
+
+.team-card {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Circle Image Container */
+.team-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    /* Optional: subtle border if needed */
+    border: 5px solid #f9f9f9; 
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Name & Title */
+.team-card h3 {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    color: var(--dark-navy);
+    margin-bottom: 8px;
+}
+
+.team-card span {
+    font-family: var(--body-font);
+    color: var(--text-grey);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+/*Footer*/
+.main-footer {
+    background-color: #1a1d24; 
+    color: #ffffff;
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+.footer-logo{
+  width: 250px;
+  height: auto;
+}
+
+
+.footer-col h4 {
+    color: #f6b401; 
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #f6b401;
+}
+
+.footer-col p {
+    color: #adb5bd;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #f6b401;
+    padding-left: 5px;
+}
+
+/* Contact Icons */
+.contact-col p i {
+    color: #f6b401;
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 60px;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+
+@media only screen and (max-width: 480px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    display: block; 
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  nav ul li {
+    margin: 10px 0; 
+    width: 100%;
+  }
+
+  nav img {
+    margin-bottom: 20px; 
+  }
+   
+  /*banner section*/
+  .bannersection1{
+     width: 100%;
+    height:100vh;
+  }
+  .bannerimage>img{
+    width: 100%;
+    height:100vh;
+  }
+  /*Box content */
+  .stats-overflow {
+        margin-top: 20px; /* Removes the overlap on tablets/phones */
+    }
+
+    .stats-container {
+        flex-direction: column; /* Stacks the 4 boxes vertically */
+        gap: 20px;
+    }
+
+    .stat-box {
+        width: 100%;
+    }
+  .stat-box h3 {
+        font-size: 26px;
+    }
+    /*Section3*/
+.section3{
+  display: block;
+}
+.section3images>img{
+  width: 100%;
+  height: auto;
+}
+/*Section 4 & 5*/
+     .mission-vision-section {
+        padding: 50px 0;
+        
+    }
+    .mv-grid{
+     margin: 40px 20px;
+     display: block;
+    }
+
+    .mv-card {
+      
+        padding: 40px 20px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-header h2 {
+        font-size: 30px;
+    }
+    /*Team section*/
+
+    .team-header h2 {
+        font-size: 32px;
+    }
+
+    .team-card {
+        flex: 0 0 100%; /* One member per row */
+    }
+
+    .team-img {
+        width: 200px;
+        height: 200px;
+    }
+
+   /*Footer*/
+    .main-footer {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .contact-col p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
